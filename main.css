@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+.navbar {
+  margin: 0px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+/* Nav Bar List Elements */
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: open sans;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: grey;
+}
+
+/* background color */
+body {
+  /*background-color: #f1dfd1;*/
+  background-color: #130f40;
+  background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
+}
+
+/* Center Banner, need to fix. This is only here to align text using flex. */
+.center {
+  display: flex;
+  flex-direction: row;
+}
+
+/* picture of me */
+.me {
+  position: relative;
+  height: 600px;
+  padding-top: 220px;
+}
+
+/*index page big text*/
+.frontparagraph {
+  margin: 0px;
+  padding-top: 200px;
+  color: #f1dfd1;
+}
+
+.toptext {
+  font-size: 120px;
+  padding-top: 0px;
+  margin: 0px;
+  font-family: arial;
+}
+
+.bottomtext {
+  font-size: 30px;
+  padding-top: 0px;
+  margin: 0px;
+  font-family: tahoma;
+}
+
+/*about me block CSS*/
+.bioblock{
+  background-color: #130f40;
+  background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
+  height: 500px;
+  width: 400px;
+  justify: left;
+  padding: 0px 20px 0px 20px;
+}
+
+.bioheading{
+  text-align: center;
+  text-decoration: underline;
+  font-family: arial;
+  color: #f1dfd1;
+  padding-top: 25px;
+  margin-bottom: 10px;
+}
+
+.biotext{
+  text-align: center;
+  margin: auto;
+  color: #f1dfd1;
+  font-family: open sans;
+}
+
+/*password page button CSS*/
+.row-fluid {
+	margin-top: 5%;
+	margin-left: 40%;
+	margin-right: auto;
+}
+
+.button1 {
+	margin-left: 43%;
+}
+
+label {
+	font: normal 18px Georgia,serif;
+}
+
+.button2 {
+	display: none;
+	margin-left: 41%;
+	width: 120px;
+}
