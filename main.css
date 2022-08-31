@@ -1,0 +1,719 @@
+/* _________________________________________________________________Site-Wide CSS______________________________________________________________ */
+/* _________________________________________________________________Site-Wide CSS______________________________________________________________ */
+/* _________________________________________________________________stylee-Wide CSS______________________________________________________________ */
+@import url('https://fonts.googleapis.com/css2?family=Akshar&family=Open+Sans:wght@300&display=swap');
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+a {
+ text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+ list-style: none;
+}
+
+p{
+  font-family: 'Open Sans', sans-serif;
+  color: white;  /* red #eb1000*/
+  z-index: 1;
+  margin-bottom: 5px;
+}
+
+hr{
+  /* red #eb1000*/
+  width: 25%;
+  z-index: 1;
+  margin-bottom: 12px;
+}
+
+::placeholder{
+  color: white;
+}
+
+/* _________________________________________________________________Index Page CSS______________________________________________________________ */
+/* _________________________________________________________________Index Page CSS______________________________________________________________ */
+/* _________________________________________________________________Index Page CSS______________________________________________________________ */
+
+/*-------------Navbar Styling Starts----------------*/
+/*-------------Navbar Styling Starts----------------*/
+/*-------------Navbar Styling Starts----------------*/
+
+.navbar {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 20px;
+ background-color: #2f2e2e;
+ color: #2f2e2e;
+ font-family: 'Open Sans';
+ z-index: 1;
+}
+
+.nav-links a {
+ color: #fff;
+}
+
+/* LOGO */
+.logo img {
+  width: 230px;
+  height: 75px;
+}
+
+/* NAVBAR MENU */
+.menu {
+ display: flex;
+ gap: 1em;
+ font-size: 20px;
+  z-index: 1;
+}
+
+.menu li:hover {
+ background-color: #1a1a1a;
+ transition: 0.1.5s ease;
+}
+
+/*everytime i adjust sizing i usually need to adjust sizing on the dropdown menu too*/
+.menu li {
+ padding: 25px 24px;
+ padding-left: 5px;
+ border-left: 1px solid white; /*This puts the slash in nav bar*/
+ display: inline-block;
+ width: 200px;
+ z-index: 1;
+ z-index: 2;
+}
+
+.home{
+  border-left: 1px solid white;
+}
+
+/* DROPDOWN MENU */
+.classes{
+ position: relative; 
+}
+
+.dropdown {
+ background-color: #1a1a1a;
+ padding-top: 1em;
+ position: absolute; /*WITH RESPECT TO PARENT*/
+ display: none;
+ top: 70px;
+}
+
+.dropdown li + li {
+ margin-top: 10px;
+}
+
+.dropdown li {
+ padding: 0.5em 1em;
+ width: 8em;
+}
+
+.dropdown li:hover {
+ background-color: #2f2e2e;
+ width: 100%;
+}
+
+.classes:hover .dropdown {
+ display: block;
+}
+
+/*-------------Responsive Menu----------------*/
+/*-------------Responsive Menu----------------*/
+/*-------------Responsive Menu----------------*/
+/* CHECKBOX HACK */
+
+input[type=checkbox]{
+ display: none;
+  z-index: 2;
+} 
+
+/*-------------Hamburger Menu----------------*/
+/*-------------Hamburger Menu----------------*/
+/*-------------Hamburger Menu----------------*/
+
+.hamburger {
+ display: none;
+ font-size: 24px;
+ user-select: none;
+ z-index: 2;
+ color: white;
+}
+
+/*-------------Media Queries----------------*/
+/*-------------Media Queries----------------*/
+/*-------------Media Queries----------------*/
+
+@media (max-width: 768px) {
+.menu { 
+ display:none;
+ position: absolute;
+ background-color:#2f2e2e;
+ right: 0;
+ left: 0;
+ text-align: center;
+ padding: 16px 0;
+  z-index: 2; 
+}
+  
+.menu li:hover {
+ display: inline-block;
+ background-color:#2f2e2e;
+ transition: 0.3s ease;
+  z-index: 2; 
+}
+  
+.menu li + li {
+ margin-top: 12px;
+  z-index: 2;  
+}
+  
+input[type=checkbox]:checked ~ .menu{
+ display: block; 
+}
+  
+.hamburger {
+ display: block;
+  z-index: 2;
+  
+}
+.dropdown {
+ left: 50%;
+ top: 30px;
+ transform: translateX(35%);
+  z-index: 2;
+}
+  
+.dropdown li:hover {
+ background-color: #4c9e9e;
+}
+}
+
+/*-------------Index Body Setup w/ background picture----------------*/
+/*-------------Index Body Setup w/ background picture----------------*/
+/*-------------Index Body Setup w/ background picture----------------*/
+
+#indexbody{
+  background-image:url("school22.jpg");
+  background-size: 100% auto;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/*-------------Index Page Text----------------*/
+/*-------------Index Page Text----------------*/
+/*-------------Index Page Text----------------*/
+
+.indexcontainer{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#mainheading{
+  margin-top: 10vh;
+  font-size: 70px;
+  font-family: 'alegreya sans sc';
+}
+
+#mainSubText{
+  font-size: 30px;
+  color: black;
+}
+
+/*-------------About Index Section----------------*/
+/*-------------About Index Section----------------*/
+/*-------------About Index Section----------------*/
+
+.aboutContainer{
+  margin-top: 10vh;
+  height: 70vh;
+  background-color: #dedede;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.aboutPic{
+  margin: 20px;
+  width: 50vw;   /*if having trouble with the pic again take width and height out completely, this allows pic to shrink in browsers*/
+  height: auto;
+  float: left;
+
+}
+
+#rightTextAbout{
+  margin-top: 2vh;
+  margin-right: 10vw;
+  margin-left: 2vh;
+  color: black;
+  font-size: 20px;
+  overflow: auto;
+  max-width: 500px;
+}
+
+/*-------------Help Section----------------*/
+/*-------------Help Section----------------*/
+/*-------------Help Section----------------*/
+
+.helpContainer{
+  height: 35vh;
+  background-color: #FEFEE0;
+  background-color: #2F2E2E;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+#extraHelpHeading{
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  color:white;
+}
+
+#extraHelpText{
+  color:black;
+  color:white;
+  margin-bottom: 2vh;
+}
+
+.button1{
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 5px 5px #177CFF;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  color: #177CFF;
+}
+
+.button1:hover{
+  background-color: #d6d6d6;
+  transform: scale(0.97);
+}
+
+.helpButton{
+  background-color: #dedede;
+  width: 200px;
+  height: 50px;
+ border-radius: 8px;
+  vertical-align: middle;
+  padding-top: 11px;
+  font-size: 20px;
+  font-family: "open sans";
+}
+
+.helpButton:hover{
+  background-color: #c7c5c5;
+}
+
+/*-------------Footer Section----------------*/
+/*-------------Footer Section----------------*/
+/*-------------Footer Section----------------*/
+
+.footercontainer{
+  position: fixed;
+  bottom: 0;
+  width: 100% auto;
+  height: 30px;
+  background-color: #2f2e2e;
+  /*border: 1px solid red;*/
+}
+
+/* _________________________________________________________________Atlas Page CSS______________________________________________________________ */
+/* _________________________________________________________________Atlas Page CSS______________________________________________________________ */
+/* _________________________________________________________________Atlas Page CSS______________________________________________________________ */
+/* _________________________________________________________________Atlas Page CSS______________________________________________________________ */
+
+
+/*-------------Atlas Nav Bar----------------*/
+/*-------------Atlas Nav Bar----------------*/
+/*-------------Atlas Nav Bar----------------*/
+
+.navbaratlus {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 20px;
+ background-color: transparent;
+ color: #2f2e2e;
+ font-family: 'Open Sans';
+ z-index: 1;
+}
+
+/*-------------Atlas Search Bar----------------*/
+/*-------------Atlas Search Bar----------------*/
+/*-------------Atlas Search Bar----------------*/
+
+.atlasbar[type=text] {
+  padding: 6px;
+  font-size: 17px;
+  font-family: 'open sans';
+  color: white;
+  display: flex;
+  height: 40px;
+  width: 400px;
+  z-index: 1;
+
+  box-shadow:
+    inset 0 0 50px #000,        /* inner color*/
+    inset 20px 0 80px #000,     /* inner left short*/
+    inset -20px 0 80px #0ff,    /* inner right short*/
+    inset 20px 0 300px #f0f,    /* inner left broad*/
+    inset -20px 0 300px #0ff,   /* inner right broad*/
+    0 0 10px #fff,              /* outer color*/
+    -1px 0 10px #f0f,           /* out left color*/
+    1px 0 10px #0ff;            /* outer right color*/
+}
+
+/*-------------Atlas Page Body----------------*/
+/*-------------Atlas Page Body----------------*/
+/*-------------Atlas Page Body----------------*/
+
+.atlascontainer{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15vh;
+  max-height: 100vh;
+}
+
+  .atlasimage{
+    display: flex;
+    position: absolute;
+    height: auto;
+    min-width: 40vh;
+    min-height: 100vh;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+#atlasbody{
+  /*background-color: black;*/
+  background-image:url("/atlasbackground.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/*-------------Atlas Title "Atlas"----------------*/
+/*-------------Atlas Title "Atlas"----------------*/
+/*-------------Atlas Title "Atlas"----------------*/
+
+.title{
+  font-family: 'Akshar', sans-serif;
+  color: white;  
+  margin-bottom: -15px;
+  font-size: 100px;
+  display: flex;
+  z-index: 1;
+}
+
+
+
+/* _________________________________________________________________AP CS Page CSS______________________________________________________________ */
+/* _________________________________________________________________AP CS Page CSS______________________________________________________________ */
+/* _________________________________________________________________AP CS Page CSS______________________________________________________________ */
+/* _________________________________________________________________AP CS Page CSS______________________________________________________________ */
+
+#apBody{
+  background-image:url("appic.jpg");
+  background-size: 100% auto;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+#apMainheading{
+  margin-top: 10vh;
+  font-size: 80px;
+  color: white;
+  font-family: 'alegreya sans sc';
+
+}
+
+#apMainSubText{
+  font-size: 30px;
+  color: white;
+
+}
+
+#apcal{
+  width: 100%;
+}
+
+.aboutContainerap{
+  margin-top: 10vh;
+  height: auto;
+  background-color: #dedede;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#textAboutAp{
+  color: black;
+  font-size: 20px;
+  padding: 4vh 4vh 4vh 4vh;
+}
+
+/* _________________________________________________________________STEAM (HS) Page CSS______________________________________________________________ */
+/* _________________________________________________________________STEAM (HS) Page CSS______________________________________________________________ */
+/* _________________________________________________________________STEAM (HS) Page CSS______________________________________________________________ */
+/* _________________________________________________________________STEAM (HS) Page CSS______________________________________________________________ */
+
+
+#steamHsBody{
+  background-image:url("steamhspic.jpg");
+  background-size: 100% auto;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+#steamHsMainheading{
+  margin-top: 10vh;
+  font-size: 80px;
+  color: white;
+  font-family: 'alegreya sans sc';
+}
+
+#steamhscal{
+  width: 100%;
+}
+
+#steamHsMainSubText{
+  font-size: 30px;
+  color: white;
+}
+
+#apcal{
+  width: 100%;
+}
+
+.aboutContainerSteamHs{
+  margin-top: 10vh;
+  height: auto;
+  background-color: #dedede;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#textAboutSteamHs{
+  color: black;
+  font-size: 20px;
+  padding: 4vh 4vh 4vh 4vh;
+}
+
+/* _________________________________________________________________STEAM (MS) Page CSS______________________________________________________________ */
+/* _________________________________________________________________STEAM (MS) Page CSS______________________________________________________________ */
+/* _________________________________________________________________STEAM (MS) Page CSS______________________________________________________________ */
+/* _________________________________________________________________STEAM (MS) Page CSS______________________________________________________________ */
+
+
+#steamMsBody{
+  background-image:url("steammspic.jpg");
+  background-size: 100% auto;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+#steamMsMainheading{
+  margin-top: 10vh;
+  font-size: 80px;
+  color: white;
+  font-family: 'alegreya sans sc';
+}
+
+#steammscal{
+  width: 100%;
+}
+
+#steamMsMainSubText{
+  font-size: 30px;
+  color: white;
+}
+
+.aboutContainerSteamMs{
+  margin-top: 10vh;
+  height: auto;
+  background-color: #dedede;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#textAboutSteamMs{
+  color: black;
+  font-size: 20px;
+  padding: 4vh 4vh 4vh 4vh;
+}
+
+/* _________________________________________________________________Media Production Page CSS______________________________________________________________ */
+/* _________________________________________________________________Media Production Page CSS______________________________________________________________ */
+/* _________________________________________________________________Media Production Page CSS______________________________________________________________ */
+/* _________________________________________________________________Media Production Page CSS______________________________________________________________ */
+
+
+#mediaBody{
+  background-image:url("mediapic.jpg");
+  background-size: 100% auto;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+#mediaMainheading{
+  margin-top: 10vh;
+  font-size: 80px;
+  color: white;
+  font-family: 'alegreya sans sc';
+}
+
+#mediacal{
+  width: 100%;
+}
+
+#mediaMainSubText{
+  font-size: 30px;
+  color: white;
+}
+
+.aboutContainerMedia{
+  margin-top: 10vh;
+  height: auto;
+  background-color: #dedede;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#textAboutMedia{
+  color: black;
+  font-size: 20px;
+  padding: 4vh 4vh 4vh 4vh;
+}
+
+/* _________________________________________________________________Chemistry in Community Page CSS______________________________________________________________ */
+/* _________________________________________________________________Chemistry in Community Page CSS______________________________________________________________ */
+/* _________________________________________________________________Chemistry in Community Page CSS______________________________________________________________ */
+/* _________________________________________________________________Chemistry in Community Page CSS______________________________________________________________ */
+
+
+#chemBody{
+  background-image:url("chempic.jpg");
+  background-size: 100% auto;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+#chemMainheading{
+  margin-top: 10vh;
+  font-size: 80px;
+  color: white;
+  font-family: 'alegreya sans sc';
+}
+
+#chemcal{
+  width: 100%;
+}
+
+#chemMainSubText{
+  font-size: 30px;
+  color: white;
+}
+
+.aboutContainerChem{
+  margin-top: 10vh;
+  height: auto;
+  background-color: #dedede;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#textAboutChem{
+  color: black;
+  font-size: 20px;
+  padding: 4vh 4vh 4vh 4vh;
+}
+
+/* _________________________________________________________________Contact Page CSS______________________________________________________________ */
+/* _________________________________________________________________Contact Page CSS______________________________________________________________ */
+/* _________________________________________________________________Contact Page CSS______________________________________________________________ */
+/* _________________________________________________________________Contact Page CSS______________________________________________________________ */
+
+#contactBody{
+  background-image:url("mediapic.jpg");
+  background-size: 100% auto;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#contactInfoBackground{
+  height: 50vh;
+  width: 50vh;
+  background-color: black;
+  align: center;
+  margin: 20px auto;
+  opacity: .98;
+  border: 3px solid white;
+}
+
+#contactTitleText{
+  padding-top: 1vh;
+  color: white;
+  font-family: 'akshar';
+}
+
+#contactInfoText{
+  padding: 5px 15px;
+  margin-bottom: 2vh;
+}
+
+#contactBoldText{
+  text-align: left;
+  margin-bottom: 2vh;
+  font-family: "open sans";
+  padding: 10px;
+}
+
+
+/*-------------Old Code Section----------------*/
+/*-------------Old Code Section----------------*/
+/*-------------Old Code Section----------------*/
+
+/*controls size of logo link box
+.logo a{
+  display: block;
+  height: auto;
+}*/
+
+/*.atlasbody{
+  background-image:url("/atlasbackground.jpg");
+}*/
