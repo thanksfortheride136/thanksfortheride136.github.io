@@ -246,7 +246,6 @@ input[type=checkbox]:checked ~ .menu{
   width: 50vw;   /*if having trouble with the pic again take width and height out completely, this allows pic to shrink in browsers*/
   height: auto;
   float: left;
-
 }
 
 #rightTextAbout{
@@ -701,6 +700,15 @@ input[type=checkbox]:checked ~ .menu{
   margin-bottom: 2vh;
   font-family: "open sans";
   padding: 10px;
+}
+
+/*----------------------------------------------------------------maybe search snipping tool page*/
+
+.stepsPic{
+  margin: 20px;
+  width: 50vw;   /*if having trouble with the pic again take width and height out completely, this allows pic to shrink in browsers*/
+  height: auto;
+  float: left;
 }
 
 
