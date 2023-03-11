@@ -246,6 +246,7 @@ input[type=checkbox]:checked ~ .menu{
   width: 50vw;   /*if having trouble with the pic again take width and height out completely, this allows pic to shrink in browsers*/
   height: auto;
   float: left;
+
 }
 
 #rightTextAbout{
@@ -702,7 +703,28 @@ input[type=checkbox]:checked ~ .menu{
   padding: 10px;
 }
 
-/*----------------------------------------------------------------maybe search snipping tool page*/
+/* _________________________________________________________________ATLAS SEARCH PAGE RESULT TEMPLATE CSS______________________________________________________________ */
+/* _________________________________________________________________ATLAS SEARCH PAGE RESULT TEMPLATE CSS_____________________________________________________________ */
+/* _________________________________________________________________ATLAS SEARCH PAGE RESULT TEMPLATE CSS______________________________________________________________ */
+/* _________________________________________________________________ATLAS SEARCH PAGE RESULT TEMPLATE CSS______________________________________________________________ */
+
+#searchResultTemplateBody{
+  background-image:url("background1.png");
+  background-size: 100% auto;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.stepsContainer{
+  margin-top: 10vh;
+  height: 70vh;
+  background-color: #dedede;
+  display: flex;
+  flex-direction: row;
+  
+}
 
 .stepsPic{
   margin: 20px;
@@ -711,7 +733,59 @@ input[type=checkbox]:checked ~ .menu{
   float: left;
 }
 
+#stepsText{
+  margin-top: 2vh;
+  margin-left: 2vh;
+  margin-bottom: 3vh;
+  color: black;
+  font-size: 20px;
+  overflow: auto;
+  max-width: 700px;
+  color: white;
+}
 
+/* ___________________________________________________________________________UKE PROJECT CSS_________________________________________________________________________ */
+/* ___________________________________________________________________________UKE PROJECT CSS_________________________________________________________________________ */
+/* ___________________________________________________________________________UKE PROJECT CSS_________________________________________________________________________ */
+/* ___________________________________________________________________________UKE PROJECT CSS_________________________________________________________________________ */
+
+.ukeAssemblyHeading{
+  color: white;
+  margin-left: 2vh;
+  margin-top: 2vh;
+}
+
+.ukeMediaContainer{
+  display: flex;
+  flex-direction: row;
+  
+}
+.ukeMediaVideo{
+  margin-left: 2vh;
+  margin-right: 2vh;
+}
+
+.sleek-button {
+  background-color: white;
+  color: #333;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  margin-left: 2vh;
+}
+
+.sleek-button:hover {
+  background-color: #D3D3D3;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.picGap{
+  margin-right: 2vh;
+}
 /*-------------Old Code Section----------------*/
 /*-------------Old Code Section----------------*/
 /*-------------Old Code Section----------------*/
