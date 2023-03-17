@@ -2,36 +2,38 @@
 /* _________________________________________________________________Site-Wide CSS______________________________________________________________ */
 /* _________________________________________________________________stylee-Wide CSS______________________________________________________________ */
 @import url('https://fonts.googleapis.com/css2?family=Akshar&family=Open+Sans:wght@300&display=swap');
+
 * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
- text-decoration: none;
+  text-decoration: none;
   cursor: pointer;
 }
 
 li {
- list-style: none;
+  list-style: none;
 }
 
-p{
+p {
   font-family: 'Open Sans', sans-serif;
-  color: white;  /* red #eb1000*/
+  color: white;
+  /* red #eb1000*/
   z-index: 1;
   margin-bottom: 5px;
 }
 
-hr{
+hr {
   /* red #eb1000*/
   width: 25%;
   z-index: 1;
   margin-bottom: 12px;
 }
 
-::placeholder{
+::placeholder {
   color: white;
 }
 
@@ -44,18 +46,18 @@ hr{
 /*-------------Navbar Styling Starts----------------*/
 
 .navbar {
- display: flex;
- align-items: center;
- justify-content: space-between;
- padding: 20px;
- background-color: #2f2e2e;
- color: #2f2e2e;
- font-family: 'Open Sans';
- z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #2f2e2e;
+  color: #2f2e2e;
+  font-family: 'Open Sans';
+  z-index: 1;
 }
 
 .nav-links a {
- color: #fff;
+  color: #fff;
 }
 
 /* LOGO */
@@ -66,61 +68,63 @@ hr{
 
 /* NAVBAR MENU */
 .menu {
- display: flex;
- gap: 1em;
- font-size: 20px;
+  display: flex;
+  gap: 1em;
+  font-size: 20px;
   z-index: 1;
 }
 
 .menu li:hover {
- background-color: #1a1a1a;
- transition: 0.1.5s ease;
+  background-color: #1a1a1a;
+  transition: 0.1.5s ease;
 }
 
 /*everytime i adjust sizing i usually need to adjust sizing on the dropdown menu too*/
 .menu li {
- padding: 25px 24px;
- padding-left: 5px;
- border-left: 1px solid white; /*This puts the slash in nav bar*/
- display: inline-block;
- width: 200px;
- z-index: 1;
- z-index: 2;
+  padding: 25px 24px;
+  padding-left: 5px;
+  border-left: 1px solid white;
+  /*This puts the slash in nav bar*/
+  display: inline-block;
+  width: 200px;
+  z-index: 1;
+  z-index: 2;
 }
 
-.home{
+.home {
   border-left: 1px solid white;
 }
 
 /* DROPDOWN MENU */
-.classes{
- position: relative; 
+.classes {
+  position: relative;
 }
 
 .dropdown {
- background-color: #1a1a1a;
- padding-top: 1em;
- position: absolute; /*WITH RESPECT TO PARENT*/
- display: none;
- top: 70px;
+  background-color: #1a1a1a;
+  padding-top: 1em;
+  position: absolute;
+  /*WITH RESPECT TO PARENT*/
+  display: none;
+  top: 70px;
 }
 
-.dropdown li + li {
- margin-top: 10px;
+.dropdown li+li {
+  margin-top: 10px;
 }
 
 .dropdown li {
- padding: 0.5em 1em;
- width: 8em;
+  padding: 0.5em 1em;
+  width: 8em;
 }
 
 .dropdown li:hover {
- background-color: #2f2e2e;
- width: 100%;
+  background-color: #2f2e2e;
+  width: 100%;
 }
 
 .classes:hover .dropdown {
- display: block;
+  display: block;
 }
 
 /*-------------Responsive Menu----------------*/
@@ -128,21 +132,21 @@ hr{
 /*-------------Responsive Menu----------------*/
 /* CHECKBOX HACK */
 
-input[type=checkbox]{
- display: none;
+input[type=checkbox] {
+  display: none;
   z-index: 2;
-} 
+}
 
 /*-------------Hamburger Menu----------------*/
 /*-------------Hamburger Menu----------------*/
 /*-------------Hamburger Menu----------------*/
 
 .hamburger {
- display: none;
- font-size: 24px;
- user-select: none;
- z-index: 2;
- color: white;
+  display: none;
+  font-size: 24px;
+  user-select: none;
+  z-index: 2;
+  color: white;
 }
 
 /*-------------Media Queries----------------*/
@@ -150,56 +154,57 @@ input[type=checkbox]{
 /*-------------Media Queries----------------*/
 
 @media (max-width: 768px) {
-.menu { 
- display:none;
- position: absolute;
- background-color:#2f2e2e;
- right: 0;
- left: 0;
- text-align: center;
- padding: 16px 0;
-  z-index: 2; 
-}
-  
-.menu li:hover {
- display: inline-block;
- background-color:#2f2e2e;
- transition: 0.3s ease;
-  z-index: 2; 
-}
-  
-.menu li + li {
- margin-top: 12px;
-  z-index: 2;  
-}
-  
-input[type=checkbox]:checked ~ .menu{
- display: block; 
-}
-  
-.hamburger {
- display: block;
-  z-index: 2;
-  
-}
-.dropdown {
- left: 50%;
- top: 30px;
- transform: translateX(35%);
-  z-index: 2;
-}
-  
-.dropdown li:hover {
- background-color: #4c9e9e;
-}
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: #2f2e2e;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+    z-index: 2;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    background-color: #2f2e2e;
+    transition: 0.3s ease;
+    z-index: 2;
+  }
+
+  .menu li+li {
+    margin-top: 12px;
+    z-index: 2;
+  }
+
+  input[type=checkbox]:checked~.menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+    z-index: 2;
+
+  }
+
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+    z-index: 2;
+  }
+
+  .dropdown li:hover {
+    background-color: #4c9e9e;
+  }
 }
 
 /*-------------Index Body Setup w/ background picture----------------*/
 /*-------------Index Body Setup w/ background picture----------------*/
 /*-------------Index Body Setup w/ background picture----------------*/
 
-#indexbody{
-  background-image:url("school22.jpg");
+#indexbody {
+  background-image: url("school22.jpg");
   background-size: 100% auto;
   background-size: cover;
   background-position: center;
@@ -211,19 +216,19 @@ input[type=checkbox]:checked ~ .menu{
 /*-------------Index Page Text----------------*/
 /*-------------Index Page Text----------------*/
 
-.indexcontainer{
+.indexcontainer {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-#mainheading{
+#mainheading {
   margin-top: 10vh;
   font-size: 70px;
   font-family: 'alegreya sans sc';
 }
 
-#mainSubText{
+#mainSubText {
   font-size: 30px;
   color: black;
 }
@@ -232,24 +237,25 @@ input[type=checkbox]:checked ~ .menu{
 /*-------------About Index Section----------------*/
 /*-------------About Index Section----------------*/
 
-.aboutContainer{
+.aboutContainer {
   margin-top: 10vh;
   height: 70vh;
   background-color: #dedede;
   display: flex;
   flex-direction: row;
-  
+
 }
 
-.aboutPic{
+.aboutPic {
   margin: 20px;
-  width: 50vw;   /*if having trouble with the pic again take width and height out completely, this allows pic to shrink in browsers*/
+  width: 50vw;
+  /*if having trouble with the pic again take width and height out completely, this allows pic to shrink in browsers*/
   height: auto;
   float: left;
 
 }
 
-#rightTextAbout{
+#rightTextAbout {
   margin-top: 2vh;
   margin-right: 10vw;
   margin-left: 2vh;
@@ -263,7 +269,7 @@ input[type=checkbox]:checked ~ .menu{
 /*-------------Help Section----------------*/
 /*-------------Help Section----------------*/
 
-.helpContainer{
+.helpContainer {
   height: 35vh;
   background-color: #FEFEE0;
   background-color: #2F2E2E;
@@ -273,19 +279,19 @@ input[type=checkbox]:checked ~ .menu{
   align-items: center;
 }
 
-#extraHelpHeading{
+#extraHelpHeading {
   margin-top: 2vh;
   margin-bottom: 2vh;
-  color:white;
+  color: white;
 }
 
-#extraHelpText{
-  color:black;
-  color:white;
+#extraHelpText {
+  color: black;
+  color: white;
   margin-bottom: 2vh;
 }
 
-.button1{
+.button1 {
   width: 200px;
   height: 50px;
   border-radius: 10px;
@@ -295,23 +301,23 @@ input[type=checkbox]:checked ~ .menu{
   color: #177CFF;
 }
 
-.button1:hover{
+.button1:hover {
   background-color: #d6d6d6;
   transform: scale(0.97);
 }
 
-.helpButton{
+.helpButton {
   background-color: #dedede;
   width: 200px;
   height: 50px;
- border-radius: 8px;
+  border-radius: 8px;
   vertical-align: middle;
   padding-top: 11px;
   font-size: 20px;
   font-family: "open sans";
 }
 
-.helpButton:hover{
+.helpButton:hover {
   background-color: #c7c5c5;
 }
 
@@ -319,7 +325,7 @@ input[type=checkbox]:checked ~ .menu{
 /*-------------Footer Section----------------*/
 /*-------------Footer Section----------------*/
 
-.footercontainer{
+.footercontainer {
   position: fixed;
   bottom: 0;
   width: 100% auto;
@@ -339,14 +345,14 @@ input[type=checkbox]:checked ~ .menu{
 /*-------------Atlas Nav Bar----------------*/
 
 .navbaratlus {
- display: flex;
- align-items: center;
- justify-content: space-between;
- padding: 20px;
- background-color: transparent;
- color: #2f2e2e;
- font-family: 'Open Sans';
- z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: transparent;
+  color: #2f2e2e;
+  font-family: 'Open Sans';
+  z-index: 1;
 }
 
 /*-------------Atlas Search Bar----------------*/
@@ -364,44 +370,52 @@ input[type=checkbox]:checked ~ .menu{
   z-index: 1;
 
   box-shadow:
-    inset 0 0 50px #000,        /* inner color*/
-    inset 20px 0 80px #000,     /* inner left short*/
-    inset -20px 0 80px #0ff,    /* inner right short*/
-    inset 20px 0 300px #f0f,    /* inner left broad*/
-    inset -20px 0 300px #0ff,   /* inner right broad*/
-    0 0 10px #fff,              /* outer color*/
-    -1px 0 10px #f0f,           /* out left color*/
-    1px 0 10px #0ff;            /* outer right color*/
+    inset 0 0 50px #000,
+    /* inner color*/
+    inset 20px 0 80px #000,
+    /* inner left short*/
+    inset -20px 0 80px #0ff,
+    /* inner right short*/
+    inset 20px 0 300px #f0f,
+    /* inner left broad*/
+    inset -20px 0 300px #0ff,
+    /* inner right broad*/
+    0 0 10px #fff,
+    /* outer color*/
+    -1px 0 10px #f0f,
+    /* out left color*/
+    1px 0 10px #0ff;
+  /* outer right color*/
 }
 
 /*-------------Atlas Page Body----------------*/
 /*-------------Atlas Page Body----------------*/
 /*-------------Atlas Page Body----------------*/
 
-.atlascontainer{
+.atlascontainer {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 15vh;
   max-height: 100vh;
 }
 
-  .atlasimage{
-    display: flex;
-    position: absolute;
-    height: auto;
-    min-width: 40vh;
-    min-height: 100vh;
-    height: 100vh;
-    right: 0;
-    top: 0;
-    z-index: -1;
-  }
+.atlasimage {
+  display: flex;
+  position: absolute;
+  height: auto;
+  min-width: 40vh;
+  min-height: 100vh;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
 
-#atlasbody{
+#atlasbody {
   /*background-color: black;*/
-  background-image:url("/atlasbackground.jpg");
+  background-image: url("/atlasbackground.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -412,9 +426,9 @@ input[type=checkbox]:checked ~ .menu{
 /*-------------Atlas Title "Atlas"----------------*/
 /*-------------Atlas Title "Atlas"----------------*/
 
-.title{
+.title {
   font-family: 'Akshar', sans-serif;
-  color: white;  
+  color: white;
   margin-bottom: -15px;
   font-size: 100px;
   display: flex;
@@ -428,8 +442,8 @@ input[type=checkbox]:checked ~ .menu{
 /* _________________________________________________________________AP CS Page CSS______________________________________________________________ */
 /* _________________________________________________________________AP CS Page CSS______________________________________________________________ */
 
-#apBody{
-  background-image:url("appic.jpg");
+#apBody {
+  background-image: url("appic.jpg");
   background-size: 100% auto;
   background-size: cover;
   background-position: center;
@@ -437,7 +451,7 @@ input[type=checkbox]:checked ~ .menu{
   background-repeat: no-repeat;
 }
 
-#apMainheading{
+#apMainheading {
   margin-top: 10vh;
   font-size: 80px;
   color: white;
@@ -445,17 +459,17 @@ input[type=checkbox]:checked ~ .menu{
 
 }
 
-#apMainSubText{
+#apMainSubText {
   font-size: 30px;
   color: white;
 
 }
 
-#apcal{
+#apcal {
   width: 100%;
 }
 
-.aboutContainerap{
+.aboutContainerap {
   margin-top: 10vh;
   height: auto;
   background-color: #dedede;
@@ -464,7 +478,7 @@ input[type=checkbox]:checked ~ .menu{
   text-align: center;
 }
 
-#textAboutAp{
+#textAboutAp {
   color: black;
   font-size: 20px;
   padding: 4vh 4vh 4vh 4vh;
@@ -476,8 +490,8 @@ input[type=checkbox]:checked ~ .menu{
 /* _________________________________________________________________STEAM (HS) Page CSS______________________________________________________________ */
 
 
-#steamHsBody{
-  background-image:url("steamhspic.jpg");
+#steamHsBody {
+  background-image: url("steamhspic.jpg");
   background-size: 100% auto;
   background-size: cover;
   background-position: center;
@@ -485,27 +499,27 @@ input[type=checkbox]:checked ~ .menu{
   background-repeat: no-repeat;
 }
 
-#steamHsMainheading{
+#steamHsMainheading {
   margin-top: 10vh;
   font-size: 80px;
   color: white;
   font-family: 'alegreya sans sc';
 }
 
-#steamhscal{
+#steamhscal {
   width: 100%;
 }
 
-#steamHsMainSubText{
+#steamHsMainSubText {
   font-size: 30px;
   color: white;
 }
 
-#apcal{
+#apcal {
   width: 100%;
 }
 
-.aboutContainerSteamHs{
+.aboutContainerSteamHs {
   margin-top: 10vh;
   height: auto;
   background-color: #dedede;
@@ -514,7 +528,7 @@ input[type=checkbox]:checked ~ .menu{
   text-align: center;
 }
 
-#textAboutSteamHs{
+#textAboutSteamHs {
   color: black;
   font-size: 20px;
   padding: 4vh 4vh 4vh 4vh;
@@ -526,8 +540,8 @@ input[type=checkbox]:checked ~ .menu{
 /* _________________________________________________________________STEAM (MS) Page CSS______________________________________________________________ */
 
 
-#steamMsBody{
-  background-image:url("steammspic.jpg");
+#steamMsBody {
+  background-image: url("steammspic.jpg");
   background-size: 100% auto;
   background-size: cover;
   background-position: center;
@@ -535,23 +549,23 @@ input[type=checkbox]:checked ~ .menu{
   background-repeat: no-repeat;
 }
 
-#steamMsMainheading{
+#steamMsMainheading {
   margin-top: 10vh;
   font-size: 80px;
   color: white;
   font-family: 'alegreya sans sc';
 }
 
-#steammscal{
+#steammscal {
   width: 100%;
 }
 
-#steamMsMainSubText{
+#steamMsMainSubText {
   font-size: 30px;
   color: white;
 }
 
-.aboutContainerSteamMs{
+.aboutContainerSteamMs {
   margin-top: 10vh;
   height: auto;
   background-color: #dedede;
@@ -560,7 +574,7 @@ input[type=checkbox]:checked ~ .menu{
   text-align: center;
 }
 
-#textAboutSteamMs{
+#textAboutSteamMs {
   color: black;
   font-size: 20px;
   padding: 4vh 4vh 4vh 4vh;
@@ -572,8 +586,8 @@ input[type=checkbox]:checked ~ .menu{
 /* _________________________________________________________________Media Production Page CSS______________________________________________________________ */
 
 
-#mediaBody{
-  background-image:url("mediapic.jpg");
+#mediaBody {
+  background-image: url("mediapic.jpg");
   background-size: 100% auto;
   background-size: cover;
   background-position: center;
@@ -581,23 +595,23 @@ input[type=checkbox]:checked ~ .menu{
   background-repeat: no-repeat;
 }
 
-#mediaMainheading{
+#mediaMainheading {
   margin-top: 10vh;
   font-size: 80px;
   color: white;
   font-family: 'alegreya sans sc';
 }
 
-#mediacal{
+#mediacal {
   width: 100%;
 }
 
-#mediaMainSubText{
+#mediaMainSubText {
   font-size: 30px;
   color: white;
 }
 
-.aboutContainerMedia{
+.aboutContainerMedia {
   margin-top: 10vh;
   height: auto;
   background-color: #dedede;
@@ -606,7 +620,7 @@ input[type=checkbox]:checked ~ .menu{
   text-align: center;
 }
 
-#textAboutMedia{
+#textAboutMedia {
   color: black;
   font-size: 20px;
   padding: 4vh 4vh 4vh 4vh;
@@ -618,8 +632,8 @@ input[type=checkbox]:checked ~ .menu{
 /* _________________________________________________________________Chemistry in Community Page CSS______________________________________________________________ */
 
 
-#chemBody{
-  background-image:url("chempic.jpg");
+#chemBody {
+  background-image: url("chempic.jpg");
   background-size: 100% auto;
   background-size: cover;
   background-position: center;
@@ -627,23 +641,23 @@ input[type=checkbox]:checked ~ .menu{
   background-repeat: no-repeat;
 }
 
-#chemMainheading{
+#chemMainheading {
   margin-top: 10vh;
   font-size: 80px;
   color: white;
   font-family: 'alegreya sans sc';
 }
 
-#chemcal{
+#chemcal {
   width: 100%;
 }
 
-#chemMainSubText{
+#chemMainSubText {
   font-size: 30px;
   color: white;
 }
 
-.aboutContainerChem{
+.aboutContainerChem {
   margin-top: 10vh;
   height: auto;
   background-color: #dedede;
@@ -652,7 +666,7 @@ input[type=checkbox]:checked ~ .menu{
   text-align: center;
 }
 
-#textAboutChem{
+#textAboutChem {
   color: black;
   font-size: 20px;
   padding: 4vh 4vh 4vh 4vh;
@@ -663,8 +677,8 @@ input[type=checkbox]:checked ~ .menu{
 /* _________________________________________________________________Contact Page CSS______________________________________________________________ */
 /* _________________________________________________________________Contact Page CSS______________________________________________________________ */
 
-#contactBody{
-  background-image:url("mediapic.jpg");
+#contactBody {
+  background-image: url("mediapic.jpg");
   background-size: 100% auto;
   background-size: cover;
   background-position: center;
@@ -675,28 +689,28 @@ input[type=checkbox]:checked ~ .menu{
   flex-direction: column;
 }
 
-#contactInfoBackground{
+#contactInfoBackground {
   height: 50vh;
   width: 50vh;
   background-color: black;
-  align: center;
+
   margin: 20px auto;
   opacity: .98;
   border: 3px solid white;
 }
 
-#contactTitleText{
+#contactTitleText {
   padding-top: 1vh;
   color: white;
   font-family: 'akshar';
 }
 
-#contactInfoText{
+#contactInfoText {
   padding: 5px 15px;
   margin-bottom: 2vh;
 }
 
-#contactBoldText{
+#contactBoldText {
   text-align: left;
   margin-bottom: 2vh;
   font-family: "open sans";
@@ -708,8 +722,8 @@ input[type=checkbox]:checked ~ .menu{
 /* _________________________________________________________________ATLAS SEARCH PAGE RESULT TEMPLATE CSS______________________________________________________________ */
 /* _________________________________________________________________ATLAS SEARCH PAGE RESULT TEMPLATE CSS______________________________________________________________ */
 
-#searchResultTemplateBody{
-  background-image:url("background1.png");
+#searchResultTemplateBody {
+  background-image: url("background1.png");
   background-size: 100% auto;
   background-size: cover;
   background-position: center;
@@ -717,23 +731,24 @@ input[type=checkbox]:checked ~ .menu{
   background-repeat: no-repeat;
 }
 
-.stepsContainer{
+.stepsContainer {
   margin-top: 10vh;
   height: 70vh;
   background-color: #dedede;
   display: flex;
   flex-direction: row;
-  
+
 }
 
-.stepsPic{
+.stepsPic {
   margin: 20px;
-  width: 50vw;   /*if having trouble with the pic again take width and height out completely, this allows pic to shrink in browsers*/
+  width: 50vw;
+  /*if having trouble with the pic again take width and height out completely, this allows pic to shrink in browsers*/
   height: auto;
   float: left;
 }
 
-#stepsText{
+#stepsText {
   margin-top: 2vh;
   margin-left: 2vh;
   margin-bottom: 3vh;
@@ -749,18 +764,19 @@ input[type=checkbox]:checked ~ .menu{
 /* ___________________________________________________________________________UKE PROJECT CSS_________________________________________________________________________ */
 /* ___________________________________________________________________________UKE PROJECT CSS_________________________________________________________________________ */
 
-.ukeAssemblyHeading{
+.ukeAssemblyHeading {
   color: white;
   margin-left: 2vh;
   margin-top: 2vh;
 }
 
-.ukeMediaContainer{
+.ukeMediaContainer {
   display: flex;
   flex-direction: row;
-  
+
 }
-.ukeMediaVideo{
+
+.ukeMediaVideo {
   margin-left: 2vh;
   margin-right: 2vh;
 }
@@ -783,9 +799,14 @@ input[type=checkbox]:checked ~ .menu{
   cursor: pointer;
 }
 
-.picGap{
+.picGap {
   margin-right: 2vh;
 }
+
+#step9PicRotate {
+  transform: rotate(-90deg);
+}
+
 /*-------------Old Code Section----------------*/
 /*-------------Old Code Section----------------*/
 /*-------------Old Code Section----------------*/
