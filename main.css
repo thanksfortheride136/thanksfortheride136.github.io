@@ -632,7 +632,7 @@ input[type=checkbox] {
 /* _________________________________________________________________Chemistry in Community Page CSS______________________________________________________________ */
 
 
-#chemBody {
+#engineeringBody {
   background-image: url("chempic.jpg");
   background-size: 100% auto;
   background-size: cover;
@@ -641,7 +641,7 @@ input[type=checkbox] {
   background-repeat: no-repeat;
 }
 
-#chemMainheading {
+#engineeringMainheading {
   margin-top: 10vh;
   font-size: 80px;
   color: white;
@@ -652,12 +652,12 @@ input[type=checkbox] {
   width: 100%;
 }
 
-#chemMainSubText {
+#engineeringMainSubText {
   font-size: 30px;
   color: white;
 }
 
-.aboutContainerChem {
+.aboutContainerEngineering {
   margin-top: 10vh;
   height: auto;
   background-color: #dedede;
@@ -666,7 +666,7 @@ input[type=checkbox] {
   text-align: center;
 }
 
-#textAboutChem {
+#textAboutEngineering {
   color: black;
   font-size: 20px;
   padding: 4vh 4vh 4vh 4vh;
